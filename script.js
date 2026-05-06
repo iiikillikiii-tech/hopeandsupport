@@ -23,10 +23,10 @@ copyButtons.forEach((button) => {
 
     try {
       await navigator.clipboard.writeText(value);
-      updateCopyStatus("Zkopírováno: " + value);
+      setCopyStatus("Zkopírováno: " + value);
     } catch {
       fallbackCopy(value);
-      updateCopyStatus("Údaj připraven ke zkopírování: " + value);
+      setCopyStatus("Údaj zkopírován: " + value);
     }
   });
 });
@@ -43,10 +43,8 @@ function fallbackCopy(value) {
   input.remove();
 }
 
-function updateCopyStatus(message) {
-  if (!copyStatus) {
-    return;
+function setCopyStatus(message) {
+  if (copyStatus) {
+    copyStatus.textContent = message;
   }
-
-  copyStatus.textContent = message;
 }

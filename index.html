@@ -3,237 +3,203 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Koncept modernizace webu Nadačního fondu HOPE&SUPPORT.">
-    <title>HOPE&SUPPORT | Koncept redesignu</title>
+    <meta name="description" content="Druhá varianta lokálního redesignu webu Nadačního fondu HOPE&SUPPORT.">
+    <title>HOPE&SUPPORT | Moderní koncept webu</title>
     <link rel="preconnect" href="https://www.hopeandsupport.cz">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" data-header>
+    <header class="site-header">
       <a class="brand" href="#top" aria-label="HOPE&SUPPORT úvod">
         <img src="https://www.hopeandsupport.cz/images/hp-logo.svg" alt="Nadační fond HOPE&SUPPORT">
+        <span>Koncept 2026</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
         <span></span>
         <span></span>
         <span></span>
         Menu
       </button>
 
-      <nav class="primary-nav" id="primary-nav" data-nav>
-        <a href="#pomoc">Pomoc</a>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#sbirka">Sbírka</a>
         <a href="#programy">Programy</a>
         <a href="#projekty">Projekty</a>
         <a href="#aktuality">Aktuality</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
 
-      <div class="language-switch" aria-label="Jazyková mutace">
-        <a href="#" aria-current="true">CZ</a>
-        <a href="#">EN</a>
-        <a href="#">UA</a>
-      </div>
+      <a class="header-cta" href="#sbirka">Přispět</a>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" role="img" aria-label="Humanitární pomoc pro Ukrajinu"></div>
-        <div class="hero-content">
-          <p class="concept-label">Návrh redesignu - lokální ukázka</p>
+        <div class="hero-copy">
+          <p class="overline">Druhý návrh redesignu</p>
           <h1 id="hero-title">HOPE&SUPPORT</h1>
           <p class="hero-lead">
-            Nadační fond propojující humanitární pomoc, podporu neziskových organizací a projekty obnovy v zemích zasažených krizí.
+            Humanitární fond pro pomoc lidem zasaženým krizí, podporu neziskových organizací a obnovu regionů po válce nebo katastrofě.
           </p>
-          <div class="hero-actions" aria-label="Hlavní akce">
-            <a class="button button-primary" href="#sbirka">Přispět na sbírku</a>
-            <a class="button button-secondary" href="#kontakt">Kontaktovat fond</a>
+          <div class="hero-actions">
+            <a class="button primary" href="#sbirka">Pomoci teď</a>
+            <a class="button secondary" href="#programy">Zjistit více</a>
+          </div>
+          <div class="hero-proof" aria-label="Základní fakta">
+            <div>
+              <strong>od 2023</strong>
+              <span>registrovaný nadační fond</span>
+            </div>
+            <div>
+              <strong>Ukrajina</strong>
+              <span>hlavní směr pomoci</span>
+            </div>
+            <div>
+              <strong>firmy</strong>
+              <span>partnerství pro obnovu</span>
+            </div>
           </div>
         </div>
-        <aside class="donation-panel" aria-label="Rychlé informace ke sbírce">
-          <p class="eyebrow">Aktuální výzva</p>
-          <h2>Pomoc obyvatelům Ukrajiny po havárii Kachovské přehrady</h2>
-          <p>Fond vybírá prostředky na zajištění pitné vody formou kontejnerových jednotek pro úpravu vody.</p>
-          <dl>
-            <div>
-              <dt>Cíl</dt>
-              <dd>15-20 jednotek</dd>
-            </div>
-            <div>
-              <dt>Variabilní symbol</dt>
-              <dd>202303</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
 
-      <section class="trust-strip" aria-label="Základní fakta">
-        <div>
-          <strong>2023</strong>
-          <span>registrace fondu</span>
-        </div>
-        <div>
-          <strong>Ukrajina</strong>
-          <span>hlavní humanitární směr</span>
-        </div>
-        <div>
-          <strong>ČR / EU / OSN</strong>
-          <span>granty a programy</span>
-        </div>
-        <div>
-          <strong>Firmy</strong>
-          <span>zapojení do obnovy</span>
+        <div class="hero-visual">
+          <img src="https://www.hopeandsupport.cz/images/banner-homepage.jpg?2023" alt="Humanitární pomoc a spolupráce">
+          <div class="visual-note">
+            <span>Aktuální priorita</span>
+            <strong>Pitná voda pro civilní obyvatele Ukrajiny</strong>
+          </div>
         </div>
       </section>
 
-      <section class="section section-intro" id="pomoc">
-        <div class="section-heading">
-          <p class="eyebrow">Poslání fondu</p>
-          <h2>Pomoc, která má jasný směr a měřitelný dopad.</h2>
-        </div>
-        <div class="intro-copy">
+      <section class="campaign" id="sbirka" aria-labelledby="campaign-title">
+        <div class="campaign-copy">
+          <p class="overline">Aktuální výzva</p>
+          <h2 id="campaign-title">Sbírka na kontejnerové jednotky pro úpravu vody.</h2>
           <p>
-            Nadační fond HOPE&SUPPORT vznikl za dobročinným a veřejně prospěšným účelem. Zaměřuje se na humanitární pomoc, podporu neziskových organizací ve třetích zemích a přípravu projektů poválečné obnovy.
-          </p>
-          <p>
-            Vedle krizové pomoci fond rozvíjí témata sociální podpory, ekologicko-klimatických aktivit, nových technologií, IT gramotnosti a finanční gramotnosti.
+            Cílem je zajistit pitnou vodu obyvatelům zasaženým havárií Kachovské přehrady. Technologie může pomoci i na dalších místech Ukrajiny, například v nemocnicích.
           </p>
         </div>
-      </section>
 
-      <section class="section activity-grid" aria-label="Hlavní oblasti">
-        <article class="activity-card">
-          <span class="card-marker blue"></span>
-          <h3>Humanitární pomoc</h3>
-          <p>Podpora obyvatel a organizací v zemích zasažených válkou, krizí nebo přírodní katastrofou.</p>
-        </article>
-        <article class="activity-card">
-          <span class="card-marker green"></span>
-          <h3>Granty a dotace</h3>
-          <p>Příprava a realizace dostupných programů ČR, EU, OSN, Světové banky a dalších institucí.</p>
-        </article>
-        <article class="activity-card">
-          <span class="card-marker red"></span>
-          <h3>Obnova Ukrajiny</h3>
-          <p>Zapojení českých firem do projektů obnovy a rekonstrukce regionů poškozených válkou.</p>
-        </article>
-        <article class="activity-card">
-          <span class="card-marker gray"></span>
-          <h3>Vzdělávání a technologie</h3>
-          <p>Rozvoj IT a finanční gramotnosti, AI technologií a dlouhodobě udržitelných řešení.</p>
-        </article>
-      </section>
-
-      <section class="section appeal-section" id="sbirka">
-        <div class="appeal-copy">
-          <p class="eyebrow">Výzva ke sbírce</p>
-          <h2>Pomozte zajistit pitnou vodu pro civilní obyvatele.</h2>
-          <p>
-            Sbírka je určena na dodávku kontejnerů s technologií pro úpravu vody, které mohou být následně použity i na dalších místech Ukrajiny, například v nemocnicích.
-          </p>
-          <p>
-            Civilní obyvatelstvo nese největší následky ekologických a humanitárních katastrof. Každý příspěvek pomáhá zmírnit jejich dopad.
-          </p>
-        </div>
-        <div class="bank-card" aria-label="Bankovní údaje">
-          <p class="eyebrow">Bankovní účet</p>
-          <h3>MONETA Money Bank</h3>
-          <div class="bank-row">
+        <div class="donation-box" aria-label="Bankovní údaje sbírky">
+          <div class="donation-head">
+            <span>MONETA Money Bank</span>
+            <strong>VS 202303</strong>
+          </div>
+          <button type="button" data-copy="256368837/0600">
             <span>Číslo účtu</span>
-            <button type="button" data-copy="256368837/0600">256368837/0600</button>
-          </div>
-          <div class="bank-row">
+            256368837/0600
+          </button>
+          <button type="button" data-copy="CZ24 0600 0000 0002 5636 8837">
             <span>IBAN</span>
-            <button type="button" data-copy="CZ24 0600 0000 0002 5636 8837">CZ24 0600 0000 0002 5636 8837</button>
-          </div>
-          <div class="bank-row">
+            CZ24 0600 0000 0002 5636 8837
+          </button>
+          <button type="button" data-copy="AGBACZPP">
             <span>SWIFT</span>
-            <button type="button" data-copy="AGBACZPP">AGBACZPP</button>
-          </div>
-          <div class="bank-row">
-            <span>VS</span>
-            <button type="button" data-copy="202303">202303</button>
-          </div>
-          <p class="copy-hint" data-copy-status aria-live="polite">Kliknutím zkopírujete údaj.</p>
+            AGBACZPP
+          </button>
+          <p data-copy-status aria-live="polite">Kliknutím zkopírujete vybraný údaj.</p>
         </div>
       </section>
 
-      <section class="section split-section" id="programy">
+      <section class="section pathways" id="programy" aria-labelledby="pathways-title">
         <div class="section-heading">
-          <p class="eyebrow">Programy</p>
-          <h2>Přehlednější struktura pro dárce, firmy i partnery.</h2>
+          <p class="overline">Rychlé cesty</p>
+          <h2 id="pathways-title">Úvodní stránka vede různé návštěvníky rovnou k jejich cíli.</h2>
         </div>
-        <div class="program-list">
-          <article>
-            <h3>Pro jednotlivce</h3>
-            <p>Jednoduchá cesta k daru, potvrzení o daru a aktuální informace o sbírkách.</p>
-          </article>
-          <article>
-            <h3>Pro firmy</h3>
-            <p>Možnosti partnerství, zapojení do obnovy a společensky odpovědné projekty.</p>
-          </article>
-          <article>
-            <h3>Pro organizace</h3>
-            <p>Spolupráce s neziskovým sektorem, grantové programy a projektové partnerství.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section projects-section" id="projekty">
-        <div class="section-heading">
-          <p class="eyebrow">Projekty</p>
-          <h2>Projektové části oddělené podle zaměření.</h2>
-        </div>
-        <div class="project-rail">
-          <a class="project-link" href="#sbirka">
+        <div class="pathway-grid">
+          <a href="#sbirka" class="pathway-card">
             <span>01</span>
-            <strong>Projekty Ukrajina</strong>
-            <small>Humanitární pomoc, pitná voda a obnova infrastruktury.</small>
+            <h3>Chci přispět</h3>
+            <p>Stručné vysvětlení sbírky, jasné bankovní údaje a minimum zbytečných kroků.</p>
           </a>
-          <a class="project-link" href="#programy">
+          <a href="#projekty" class="pathway-card">
             <span>02</span>
-            <strong>Ostatní projekty</strong>
-            <small>Sociální, ekologicko-klimatické a technologické aktivity.</small>
+            <h3>Jsem firma</h3>
+            <p>Prostor pro partnerství, grantové programy a zapojení do obnovy Ukrajiny.</p>
           </a>
-          <a class="project-link" href="#kontakt">
+          <a href="#kontakt" class="pathway-card">
             <span>03</span>
-            <strong>Partnerství</strong>
-            <small>Prostor pro firmy, instituce a dlouhodobé partnery.</small>
+            <h3>Potřebuji kontakt</h3>
+            <p>Adresa, e-mail, telefon a sociální sítě bez hledání v patičce.</p>
           </a>
         </div>
       </section>
 
-      <section class="section news-section" id="aktuality">
+      <section class="section impact" aria-labelledby="impact-title">
+        <div class="impact-text">
+          <p class="overline">Poslání</p>
+          <h2 id="impact-title">Naděje, solidarita a praktická podpora v jednom srozumitelném příběhu.</h2>
+        </div>
+        <div class="impact-list">
+          <article>
+            <h3>Humanitární pomoc</h3>
+            <p>Podpora civilních obyvatel a neziskových organizací v zemích zasažených krizí.</p>
+          </article>
+          <article>
+            <h3>Obnova regionů</h3>
+            <p>Příprava projektů poválečné obnovy a spolupráce s českými firmami.</p>
+          </article>
+          <article>
+            <h3>Vzdělávání a technologie</h3>
+            <p>Aktivity v oblasti IT, AI, finanční gramotnosti a udržitelných řešení.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projekty" aria-labelledby="projects-title">
         <div class="section-heading">
-          <p class="eyebrow">Aktuality</p>
-          <h2>Krátké zprávy bez přehlcení návštěvníka.</h2>
+          <p class="overline">Projekty</p>
+          <h2 id="projects-title">Modulární struktura pro současné i budoucí projekty.</h2>
+        </div>
+        <div class="project-list">
+          <article>
+            <span>Ukrajina</span>
+            <h3>Pomoc, voda a obnova infrastruktury</h3>
+            <p>Samostatná část pro humanitární výzvy, transparentní průběh a partnerské zapojení.</p>
+          </article>
+          <article>
+            <span>Granty</span>
+            <h3>Programy ČR, EU, OSN a Světové banky</h3>
+            <p>Přehled projektových oblastí, které mohou být rozvíjené podle aktuálních výzev.</p>
+          </article>
+          <article>
+            <span>Spolupráce</span>
+            <h3>Pro firmy a instituce</h3>
+            <p>Jednoduchý vstup pro partnery, kteří chtějí nabídnout expertizu, technologie nebo finance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section news" id="aktuality" aria-labelledby="news-title">
+        <div class="section-heading">
+          <p class="overline">Aktuality</p>
+          <h2 id="news-title">Krátké zprávy s jasným kontextem.</h2>
         </div>
         <div class="news-grid">
           <article>
-            <p class="news-date">Daňové informace</p>
+            <span>Daňové informace</span>
             <h3>Daňové dopady DPH při poskytnutí darů na Ukrajinu</h3>
-            <p>Finanční správa zveřejnila informace k vybraným daňovým dopadům darů souvisejících s pomocí Ukrajině.</p>
+            <p>Souhrn informací Finanční správy k vybraným daňovým dopadům darů.</p>
           </article>
           <article>
-            <p class="news-date">Humanitární situace</p>
-            <h3>Uprchlíci z Ukrajiny se mohou dostat do potíží</h3>
-            <p>Neziskové organizace upozorňují na rostoucí potřebu podpory matek, rodin a lidí v nouzi.</p>
+            <span>Humanitární situace</span>
+            <h3>Podpora matek, rodin a lidí v nouzi</h3>
+            <p>Neziskové organizace upozorňují na rostoucí potřebu praktické pomoci.</p>
           </article>
         </div>
       </section>
 
-      <section class="section contact-section" id="kontakt">
-        <div class="contact-copy">
-          <p class="eyebrow">Kontakt</p>
-          <h2>Rychlý kontakt a jasná navigace pro další krok.</h2>
-          <p>Kontaktní údaje jsou převzaté ze současného webu pro účely návrhu.</p>
+      <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+        <div>
+          <p class="overline">Kontakt</p>
+          <h2 id="contact-title">Důvěryhodnost začíná u jasných kontaktních údajů.</h2>
+          <p>Údaje jsou převzaté ze současného webu pro účely tohoto návrhu.</p>
         </div>
-        <address class="contact-card">
+        <address>
           <strong>Nadační fond HOPE&SUPPORT</strong>
           <span>Nádražní 344/23, 150 00 Praha 5 - Smíchov</span>
           <a href="mailto:kozoroh@cbox.cz">kozoroh@cbox.cz</a>
           <a href="tel:+420602506520">+420 602 506 520</a>
-          <div class="social-links" aria-label="Sociální sítě">
+          <div class="socials">
             <a href="https://www.facebook.com/groups/nadacnifondhopeandsupport/" target="_blank" rel="noreferrer">Facebook</a>
             <a href="https://www.instagram.com/nadacnifondhopeandsupport/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://www.linkedin.com/in/nadacnifondhopeandsupport/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -243,8 +209,8 @@
     </main>
 
     <footer class="site-footer">
-      <img src="https://www.hopeandsupport.cz/images/footer-logo.svg" alt="Nadační fond HOPE&SUPPORT">
-      <p>Koncept redesignu pro interní prezentaci. Produkční web se tímto náhledem nemění.</p>
+      <img src="https://www.hopeandsupport.cz/images/footer-logo.svg" alt="HOPE&SUPPORT">
+      <p>Lokální koncept redesignu. Produkční web se tímto návrhem nemění.</p>
       <a href="https://www.hopeandsupport.cz/" target="_blank" rel="noreferrer">Původní web</a>
     </footer>
 
